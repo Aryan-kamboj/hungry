@@ -3,7 +3,7 @@ import { View,TextInput } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 export const StdInput = ({placeholder,icon,pass}) => {
   return (
-      <View className="w-[100%] items-center rounded-md flex-row bg-white  h-[50] mt-[20] px-4 [elevation:20]">
+      <View className="w-[100%] items-center rounded-md flex-row bg-white  h-[50] px-4 [elevation:20]">
         <AntDesign name={icon} size={24} color="black" />
         <TextInput className=" ml-[10] self-center w-[80%] [fontSize:18] " secureTextEntry={pass} placeholder={placeholder}/>
       </View>

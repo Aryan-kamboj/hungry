@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { AuthNav } from './screens/AuthNav';
 export const RootNavigation = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer >
         <AuthNav/>
     </NavigationContainer> 
   )

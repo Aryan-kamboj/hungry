@@ -7,7 +7,15 @@ export const StdButton = ({text,color,navHandler}) => {
         bg="#ff4242"
         txt="white"
     }
-    else if(color="white"){
+    if(color=="green"){
+        bg="#1ac929"
+        txt="white"  
+    }
+    if(color=="grey"){
+        bg="#a8a8a8"
+        txt="black" 
+    }
+    if(color=="white"){
         bg="#ffffff"
         txt="black"
     }

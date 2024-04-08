@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import {  Text, View } from 'react-native';
 import { Welcome } from './src/screens/Welcome';
