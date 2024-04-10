@@ -1,6 +1,8 @@
 import React from 'react'
 import { Text, TouchableOpacity } from 'react-native'
-export const StdButton = ({text,color,navHandler}) => {
+import styled from 'styled-components/native'
+export const StdButton = ({text,color,navHandler,handler}) => {
+    
     let bg;
     let txt;
     if(color=="red"){
@@ -19,9 +21,32 @@ export const StdButton = ({text,color,navHandler}) => {
         bg="#ffffff"
         txt="black"
     }
+    const Touchable = styled.TouchableOpacity`
+    width:100%;
+    height:50;
+    background-color:${bg};
+    border-radius:10px;
+    `
+    const TextSt = styled.Text`
+    color:${txt};
+    font-weight:900;
+    padding-top:10;
+    width:99%;
+    height:100%;
+    margin-left:auto;
+    text-align:center;
+    align-self:center;
+    font-size:20;
+    padding-bottom:10;
+    
+    `
+
   return (
-    <TouchableOpacity onPress={navHandler} className={`bg-[${bg}] w-[100%] px-6 py-3 rounded-md`}>
-        <Text className={`text-${txt} self-center font-[900] text-xl`}>{text}</Text>
-    </TouchableOpacity>
+    // <TouchableOpacity onPress={navHandler} className={`bg-[${bg}] [elevation:20] h-[50] w-[100%] rounded-md`}>
+    <Touchable onPress={navHandler?navHandler:handler}>
+        {/* <Text className={`text-${txt} w-[100%] h-[100%]  font-[900] text-center py-2 self-center text-xl`}>{text}</Text> */}
+        <TextSt>{text}</TextSt>
+    </Touchable>
+    // </TouchableOpacity>
   )
 }
