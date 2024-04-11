@@ -1,7 +1,9 @@
 
 
 
-https://github.com/Aryan-kamboj/hungry/assets/90714196/3ae471c4-a643-4f30-b115-7d0b3db296f5
+https://github.com/Aryan-kamboj/hungry/assets/90714196/f0a5b757-3994-440b-a801-bbddb88d3d99
+
+
 
 
 Backend is at -> https://github.com/Aryan-kamboj/hungryBe
